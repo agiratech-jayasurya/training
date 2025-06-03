@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training</title>
+    <link rel="stylesheet" href="./training.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .internalstyle {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 class="align-center">What is CSS ?</h1>
+      <p>
+        CSS stands for Cascading Style Sheets. It is a stylesheet language used
+        to describe the presentation of a document written in HTML. CSS controls
+        how elements on a webpage should be displayed — including layout,
+        colors, fonts, spacing, animations, and responsiveness.
+      </p>
+    </section>
+
+    <section class="align-left">
+      <h1>🧱 1. CSS Syntax, Selectors, Specificity</h1>
+      <p>
+        <strong>Syntax:</strong> A CSS rule is made up of a selector and a
+        declaration block.
+      </p>
+      <p>
+        <strong>Selectors:</strong> Target specific HTML elements. <br>
+        <strong>Specificity:</strong> Spcifically target the element by declaring the ID and Class name to specific element.
+        <pre>
+  <code>
+    // By the selector, directly access the tag.
+    h1 {
+      color: blue;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 10px;
+    }
+
+    // Declare the ID name, accessing through it.
+    #main-title {
+      color: red;
+    }
+
+    // Declare the class name and access through it.
+    .highlight {
+      background: yellow;
+    }
+  </code>
+</pre>
+
+      <a href="https://www.codewithharry.com/tutorial/css-syntax">Reference</a>
+      </p>
+    </section>
+
+    <section>
+      <h1>🧩 2. Types of CSS (inline, internal, external)</h1>
+      <p style="color: green;">CSS can be applied in three ways: inline, internal, and external.</p>
+       <p>
+        <strong>Inline :</strong> <span>Inline CSS is applied directly to an individual HTML element using the style attribute. It only affects that specific element.</span>
+        <br>
+        <img src="/assets/Inline.png">
+      </p>
+      <p>
+        <strong>Internal :</strong> <span class="internalstyle">Internal CSS is written within a style tag inside the header tag section of an HTML document. It applies to the entire page.</span>
+        <br>
+        <img src="/assets/Internal.png">
+      </p>
+      <p>
+        <strong>External :</strong> External CSS is written in a separate .css file and linked to an HTML file using the link tag. It can be reused across multiple pages.
+        <br>
+        <img src="/assets/External.png">
+      </p>
+    </section>
+
+
+    <section class="color-text">
+      <h1>🎨 3. Colors, Fonts, Background, Text Properties</h1>
+      <p>
+        Control appearance using:
+        <p class="bage">color, background-color</p>
+        <p class="bage">font-family, font-size, font-weight</p>
+        <p class="bage">text-align, line-height, text-decoration</p>
+      </p>
+    </section>
+
+    <section class="boxmodel">
+      <h1>📦 4. Box Model (margin, border, padding, content)</h1>
+      <div>
+        Every HTML element is a box:
+        <p>
+          <p><span>content :</span> actual content</p>
+          <p><span>padding :</span> space inside the border</p>
+         <p><span> border :</span> wraps the padding and content</p>
+         <p><span>margin :</span> space outside the border</p>
+        </p>
+      </p>
+      <h3>Sample</p>
+      <div class="boxmodel-sample">
+        <div>
+          Outer box
+          <p>Content Here</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="boxmodel">
+      <h1>📍 6. Positioning (static, relative, absolute, fixed, sticky)</h1>
+      <div>
+        Controls how elements are positioned in the document flow:
+        <p>
+          <p><span>static :</span> default</p>
+          <p><span>relative :</span> relative to its normal position</p>
+         <p><span> absolute :</span> positioned relative to nearest positioned ancestor</p>
+         <p><span>fixed :</span> relative to viewport</p>
+          <p><span>sticky :</span> stick the element specific position</p>
+        </p>
+      </div>
+      <div>
+        <h3> Sample Demo</h3>
+        <div class="postion-demo">
+          <div class="position-box absolute">
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, atque! Consectetur nobis ratione nostrum fuga, mollitia blanditiis optio enim quae quaerat sit maxime.</span>
+            <div>
+              Absolute content
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.w3schools.com/css/css_positioning.asp">Reference</a>
+    </section>
+
+    <section class="boxmodel">
+      <h1>📐 7. Flexbox and Grid Basics </h1>
+      <div>
+        <h3>1.Used for 1D layout (row or column).</p>
+        <div class="flex-container">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+        <img src="./assets/flexhtml.png">
+        <br>
+        <img src="./assets/flexcss.png">
+        <div style="margin-bottom: 5px;">
+          <a href="https://flexboxfroggy.com/">Learn with playgame</a>
+        </div>
+        <div>
+          <a href="https://www.w3schools.com/css/css3_flexbox.asp">Flex Reference</a>
+        </div>
+      </p>
+      <div>
+        <h3>2.Used for 2D layout (rows & columns).</p>
+        <h4> Simple Demo</h4>  
+        <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+        </div>
+
+        <h4> Two Diminsion Demo</h4>  
+        <div class="grid-container">
+          <div class="grid-item grid-item-1">1</div>
+          <div class="grid-item grid-item-2">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+        </div>
+        <img src="./assets/gridhtml.png">
+        <br>
+        <img src="./assets/gridcss.png">
+        <br>
+        <img src="./assets/grid-diminsion.png">
+        <div>
+          <a href="https://www.w3schools.com/css/css_grid.asp">Grid Reference</a>
+        </div>
+      </div>
+    </section>
+
+     <section class="responsive">
+      <h1>📱 8. Responsive Design and Media Queries</h1>
+      <div>
+        Make websites look good on all devices using media queries.
+        <div class="large-view">
+          <span>Large view page</span>
+        </div>
+         <div class="medium-view">
+          <span>Medium view page</span>
+        </div>
+        <div class="small-view">
+          <span>Small view page</span>
+        </div>
+        <img src="./assets/responsive-html.png"> 
+        <br>
+        <img src="./assets/responsive-css.png">
+      </p>
+    </section>
+
+  </body>
+</html>

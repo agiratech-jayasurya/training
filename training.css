@@ -1,0 +1,166 @@
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 1em 10em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+
+h1 {
+  /* text-align: center; */
+  font-size: 2em;
+}
+
+section {
+  background: #fff;
+  padding: 1em 2em;
+  margin-bottom: 2em;
+  border-left: 2px solid #3498db;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+code {
+  /* background: #eee; */
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
+pre {
+  background: #272822;
+  color: green;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.color-text .bage {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace !important;
+}
+
+.boxmodel p span {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace !important;
+  background: #ececec;
+  padding: 0 7px;
+  border-radius: 3px;
+}
+
+.boxmodel-sample div {
+  border: 2px solid green;
+  width: max-content;
+}
+.boxmodel-sample div p {
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+
+/*Positioning */
+
+.position-box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid violet;
+  position: relative;
+}
+
+.absolute div {
+  position: absolute;
+  top: 0;
+  color: red;
+  /* background: white; */
+}
+
+/* FlexLayout*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+.flex-item {
+  background: #4caf50;
+  padding: 20px;
+  color: white;
+  margin: 5px;
+}
+
+/* GridLayout*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background: #eaeaea;
+  padding: 10px;
+}
+
+.grid-item {
+  background: #2196f3;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.grid-item-1 {
+  grid-column: 1 / span 2; /* merge column 1 and 2 */
+}
+
+.grid-item-2 {
+  grid-column: 3; /* merge column 3 */
+  grid-row: 1 / span 2; /* merge row 1 and 2 */
+}
+
+
+/* Reponsive */
+
+.large-view, .medium-view, .small-view  {
+  display: none; 
+  padding: 25px 10px;
+}
+
+@media screen and (min-width: 1300px) {
+  .large-view {
+    display: block;
+    color: green;
+    font-size: 35px !important;
+  }
+}
+
+@media screen  and (min-width: 768px) and (max-width: 1299px) {
+  .medium-view {
+    display: block;
+    color: orange;
+    font-size: 25px !important;
+  }
+}
+
+@media screen  and (max-width: 767px) {
+  .small-view {
+    display: block;
+    color: red;
+    font-size: 20px !important;
+  }
+}

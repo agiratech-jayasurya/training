@@ -155,6 +155,9 @@ pre {
     color: orange;
     font-size: 25px !important;
   }
+  body {
+    font-size: 10px;
+  }
 }
 
 @media screen  and (max-width: 767px) {
@@ -163,4 +166,11 @@ pre {
     color: red;
     font-size: 20px !important;
   }
+  body {
+    font-size: 5px;
+  }
+}
+
+#css-type {
+  color: red;
 }

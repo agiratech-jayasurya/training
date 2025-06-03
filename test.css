@@ -1,0 +1,11 @@
+.test1 {
+    color: violet;
+}
+
+.test-section > div:first-child{
+    color: pink;
+}
+
+.test-section > div:last-child{
+    color: green;
+}
